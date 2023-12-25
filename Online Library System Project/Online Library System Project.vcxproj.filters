@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Src_files">
+      <UniqueIdentifier>{b39178c0-1c59-4976-8fe8-ba54409e8b03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class_headers">
+      <UniqueIdentifier>{06dee290-78fc-4332-9382-ea7ecae999ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Book.cpp">
+      <Filter>Src_files</Filter>
+    </ClCompile>
+    <ClCompile Include="Booklist.cpp">
+      <Filter>Src_files</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Src_files</Filter>
+    </ClCompile>
+    <ClCompile Include="User_list.cpp">
+      <Filter>Src_files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Book.h">
+      <Filter>Class_headers</Filter>
+    </ClInclude>
+    <ClInclude Include="BookList.h">
+      <Filter>Class_headers</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>Class_headers</Filter>
+    </ClInclude>
+    <ClInclude Include="User_list.h">
+      <Filter>Class_headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
