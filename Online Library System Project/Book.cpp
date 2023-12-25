@@ -3,6 +3,7 @@
 
 int Book::count = 0;
 
+/*This is the default Constructor it supposed to initialize all fields*/
 Book::Book()
 {
 	title = "";
