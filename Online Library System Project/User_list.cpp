@@ -52,3 +52,38 @@ User* UserList::searchUser(int id)
 	}
 	return nullptr;
 }
+
+
+void UserList::deleteUser(int id)
+{
+	for (int i = 0; i < usersCount; i++)
+	{
+		if (users[i].getId() == id)
+		{
+			while (i < usersCount - 1)
+			{
+				users[i] = users[i + 1];
+				i++;
+			}
+			usersCount--;
+			capacity--;
+			break;
+		}
+	}
+}
+
+
+ostream& operator<<(ostream& output, const UserList& userList)
+{
+	for (int i = 0; i < userList.usersCount; i++)
+	{
+		output << userList.users[i];
+	}
+	return output;
+}
+
+
+UserList::~UserList()
+{
+	delete[]users;
+}
