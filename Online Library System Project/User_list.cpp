@@ -52,5 +52,3 @@ User* UserList::searchUser(int id)
 	}
 	return nullptr;
 }
-
-
