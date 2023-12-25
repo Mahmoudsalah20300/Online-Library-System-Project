@@ -1,18 +1,17 @@
+#include"User.h"
+#include"User_list.h"
 #include"Book.h"
-
 
 int main()
 {
-	User u1, u2, u3;
-	cin >> u1 >> u2 >> u3;
-	cout << "=========================" << endl;
-	Book b1, b2, b3;
-	cin >> b1 >> b2 >> b3;
-	cout << "=========================" << endl;
-	b1.setAuthor(u1);
-	b2.rateBook(2);
-	b2.rateBook(2.5);
-	b3.setAuthor(u3);
-	cout << b1 << b2 << b3;
+	UserList U(5);
+	User u1;
+	User u2;
+	User u3;
+	U.addUser(u1);
+	U.addUser(u2);
+	U.addUser(u3);
+	U.deleteUser(2);
+	cout << U;
 	return 0;
 }

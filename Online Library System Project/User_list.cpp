@@ -21,6 +21,7 @@ void UserList::addUser(User& user)
 {
 	if (usersCount < capacity) {
 		users[usersCount] = user;
+		users[usersCount].setId(usersCount+1);
 		usersCount++;
 	}
 	else
@@ -63,6 +64,7 @@ void UserList::deleteUser(int id)
 			while (i < usersCount - 1)
 			{
 				users[i] = users[i + 1];
+				users[i].setId(i + 1);
 				i++;
 			}
 			usersCount--;
