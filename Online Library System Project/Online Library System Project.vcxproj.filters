@@ -7,6 +7,9 @@
     <Filter Include="Class_headers">
       <UniqueIdentifier>{06dee290-78fc-4332-9382-ea7ecae999ce}</UniqueIdentifier>
     </Filter>
+    <Filter Include="UTL">
+      <UniqueIdentifier>{76952233-3e04-4f00-8902-e58739e97246}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
@@ -22,6 +25,9 @@
     <ClCompile Include="User_list.cpp">
       <Filter>Src_files</Filter>
     </ClCompile>
+    <ClCompile Include="UTL.cpp">
+      <Filter>UTL</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h">
@@ -35,6 +41,9 @@
     </ClInclude>
     <ClInclude Include="User_list.h">
       <Filter>Class_headers</Filter>
+    </ClInclude>
+    <ClInclude Include="UTL.h">
+      <Filter>UTL</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
